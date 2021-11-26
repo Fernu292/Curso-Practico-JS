@@ -1,6 +1,6 @@
-#Curso Practico de JavaScript
+##Curso Practico de JavaScript
 
-...
+Curso basico y practico de JavaScript de Platzi
 
 ## Taller 1: Figuras geometricas 
 
