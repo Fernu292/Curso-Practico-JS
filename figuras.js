@@ -10,7 +10,7 @@ console.log(`Los lados del cuadrado miden: ${lado_cuadrado} cm`);
 console.log(`El perimetro del cuadrado es: ${perimetro_cuadrado} cm`);
 console.log(`El area del cuadrado es: ${area_cuadrado} cm^2`);
 
-console.groupEnd();
+console.groupEnd();//Cierra el agrupamiento de console.log
 
 //Codigo del triangulo
 
@@ -32,3 +32,21 @@ console.log(`El area del triangulo es: ${area_triangulo}cm^2`);
 console.groupEnd();
 
 //Codigo del circulo
+
+console.group('Circulos');
+
+const radio = 5;
+const diametro = radio*2;
+const Pi = Math.PI;
+
+//Perimetro ciculo
+const perimetro_cicurlo = diametro * Pi;
+
+//Area
+const area_circulo = Pi * (radio*radio);
+
+console.log(`El diametro del ciculo es: ${diametro}, y su radio es: ${radio}`);
+console.log(`El perimetro del circulo es: ${perimetro_cicurlo}`);
+console.log(`El area del circulo es: ${area_circulo}`);
+
+console.groupEnd();
