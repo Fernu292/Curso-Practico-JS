@@ -1,4 +1,6 @@
 
+
+
 // Codigo del cuadrado
 
 const Cuadrado = (lado)=>{
@@ -33,6 +35,8 @@ const Triangulo = (lado1, lado2, lado3, altura)=>{
 
 }
 
+
+
 //Codigo del circulo
 
 const Circulo = (radio) =>{
@@ -52,6 +56,3 @@ const Circulo = (radio) =>{
 
 }
 
-Cuadrado(5);
-Triangulo(4,5,6,8);
-Circulo(5);

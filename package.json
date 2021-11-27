@@ -1,0 +1,29 @@
+{
+  "name": "curso-practico-js",
+  "version": "1.0.0",
+  "description": "Calculadora geometrica",
+  "main": "figuras.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fernu292/Curso-Practico-JS.git"
+  },
+  "keywords": [
+    "Calculator"
+  ],
+  "author": "Luis Fernando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fernu292/Curso-Practico-JS/issues"
+  },
+  "homepage": "https://github.com/Fernu292/Curso-Practico-JS#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.43.5"
+  }
+}

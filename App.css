@@ -1,0 +1,38 @@
+html {
+  background-color: #002233;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("../img/Header.svg");
+  background-size: cover;
+  height: 105rem;
+  background-repeat: no-repeat;
+}
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header nav div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.header nav div a {
+  color: white;
+  text-decoration: none;
+}
+.header nav h1 {
+  color: yellow;
+  font-size: 3rem;
+  cursor: pointer;
+}
