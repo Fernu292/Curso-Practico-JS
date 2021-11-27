@@ -3,6 +3,7 @@ html {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 .header {
   background-image: url("../img/Header.svg");
   background-size: cover;
-  height: 105rem;
+  height: 70rem;
   background-repeat: no-repeat;
 }
 .header nav {
@@ -35,4 +36,37 @@ body {
   color: yellow;
   font-size: 3rem;
   cursor: pointer;
+}
+.header .header-content {
+  max-width: 80%;
+  margin: 5rem auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+.header .header-content a {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  max-width: 25rem;
+  transition: 1s;
+}
+.header .header-content a:hover {
+  background-color: purple;
+  transition: 1s;
+}
+
+.Figures {
+  background-image: url("../img/circle.svg");
+  background-position: center center;
+  margin-top: -15rem;
+  height: 50rem;
+}
+.Figures #circulo h1 {
+  font-size: 4rem;
+  text-align: center;
 }
