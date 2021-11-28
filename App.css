@@ -11,6 +11,76 @@ body {
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
+.btn-card {
+  margin-top: 1.5rem;
+  background-color: #3434a5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1rem 2rem;
+  width: 70%;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 1s;
+}
+.btn-card:hover {
+  background-color: #6b0a6b;
+  transition: 1s;
+}
+
+.Formulario-Figura {
+  width: 50rem;
+  margin: 5rem auto;
+  background-color: #494d63;
+  color: black;
+  height: 25rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1.5rem;
+}
+.Formulario-Figura h2 {
+  font-size: 2rem;
+  color: white;
+}
+.Formulario-Figura p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.Content-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Content-card h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.seleccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.seleccion div {
+  display: flex;
+  gap: 1rem;
+}
+.seleccion div button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
 .header {
   background-image: url("../img/Header.svg");
   background-size: cover;
@@ -60,13 +130,33 @@ body {
   transition: 1s;
 }
 
-.Figures {
+#Figures-Circle {
   background-image: url("../img/circle.svg");
-  background-position: center center;
-  margin-top: -15rem;
-  height: 50rem;
+  background-size: cover;
+  height: 80rem;
+  margin-bottom: 15rem;
 }
-.Figures #circulo h1 {
-  font-size: 4rem;
+
+#Figures-Square {
+  background-image: url("../img/Cuadrado.svg");
+  background-size: cover;
+  background-position: center;
+  height: 80rem;
+  margin-bottom: 15rem;
+}
+
+#Figures-Triangle {
+  background-image: url("../img/Triangulo.svg");
+  background-size: cover;
+  background-position: center center;
+  height: 80rem;
+  margin-bottom: 15rem;
+}
+
+#General-Calculator {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 90%;
+  margin: 0 auto;
   text-align: center;
 }

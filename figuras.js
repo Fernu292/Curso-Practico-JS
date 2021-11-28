@@ -1,37 +1,36 @@
 
 
-
 // Codigo del cuadrado
 
-const Cuadrado = (lado)=>{
+const Cuadrado = (e)=>{
+    e.preventDefault();
+    const input = document.getElementById('inputCuadrado');
+    const lado = input.value;
+
     const perimetro_cuadrado = lado*4;
     const area_cuadrado = lado*lado;
 
-    console.group('Cuadrado');//Permite agrupar console.logs en un grupo especifico
-
-    console.log(`Los lados del cuadrado miden: ${lado} cm`);
-    console.log(`El perimetro del cuadrado es: ${perimetro_cuadrado} cm`);
-    console.log(`El area del cuadrado es: ${area_cuadrado} cm^2`);
-
-    console.groupEnd();//Cierra el agrupamiento de console.log
-
+    alert(`El perimetro es: ${perimetro_cuadrado}m, y su area es: ${area_cuadrado}m2`);    
 }
 
 //Codigo del triangulo
 
-const Triangulo = (lado1, lado2, lado3, altura)=>{
+const Triangulo = (e)=>{
+    e.preventDefault();
+    const lado1 = document.getElementById('input1').value;
+    const lado2 = document.getElementById('input2').value;
+    const lado3 = document.getElementById('input3').value;
 
+    let altura;
     const perimetro_triangulo = lado1+lado2+lado3;
     const area_triangulo = (lado1*altura) /2;
 
-    console.group('Triangulo');
-
-    console.log(`Los lados del triangulo miden: ${lado1}cm, ${lado2}cm, ${lado3}cm`);
-    console.log(`La altura del triangulo es: ${altura}`);
-    console.log(`El perimetro del triangulo es: ${perimetro_triangulo}cm`);
-    console.log(`El area del triangulo es: ${area_triangulo}cm^2`);
-
-    console.groupEnd();
+    if(lado1==lado2 && lado2==lado3){
+        //Triangulo equilatero
+        altura = Math.sqrt((lado1**2)-((lado2/2)**2));
+        altura = altura.toPrecision(3);
+        alert(altura)
+    }
 
 }
 
@@ -55,4 +54,31 @@ const Circulo = (radio) =>{
     console.groupEnd();
 
 }
+
+
+const clickBtn = (name)=>{
+    
+    switch (name){
+        case 'cuadrado':
+            document.querySelector('#Figures-Square').classList.remove('hidden');
+            document.querySelector('#Figures-Triangle').classList.add('hidden');
+            document.querySelector('#Figures-Circle').classList.add('hidden');
+
+            
+            break;
+
+        case 'triangulo':
+            document.querySelector('#Figures-Triangle').classList.remove('hidden');
+            document.querySelector('#Figures-Square').classList.add('hidden');
+            document.querySelector('#Figures-Circle').classList.add('hidden');
+            break;
+        case 'circulo':
+            document.querySelector('#Figures-Circle').classList.remove('hidden');
+            document.querySelector('#Figures-Triangle').classList.add('hidden');
+            document.querySelector('#Figures-Square').classList.add('hidden');
+            break;
+
+    }
+}
+
 

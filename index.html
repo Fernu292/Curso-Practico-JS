@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./App.css">
     <title>Figuras Geometricas</title>
 </head>
@@ -32,13 +33,71 @@
     </header>
 
     <!-- End header -->
+    <div>
+        <form action="select" class="seleccion">
+            <h2>Select an option</h2>
 
-    <section class="Figures">
-       <div id="circulo">
-           <h1>Circle Calculator</h1>
+            <div>
+                <button onclick="clickBtn('cuadrado')" type="button">Square <i class="material-icons" id="cuadrado">crop_square</i></button>
+
+
+                <button onclick="clickBtn('triangulo')" id="triangulo" type="button">Triangle <i class="material-icons">change_history</i></button>
+
+
+                <button onclick="clickBtn('circulo')" id="circulo" type="button">Square <i class="material-icons">panorama_fish_eye</i></button> 
+            </div>
+            
+        </form>
+    </div>
+   
+    <!-- Cicle Calculator -->
+    <section id="Figures-Circle" class="hidden">
+        <div class="Content-card">
+            <h1>Circle Calculator</h1>
+        
+            <form class="Formulario-Figura">
+                <h2>Calcular area y perimetro de un circulo</h2>
+                <p>Introduce el radio del circulo para calcular</p>
+                <input type="number" placeholder="Radio">
+                <button class="btn-card">Calcular</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <!-- Square Calculator -->
+    <section id="Figures-Square" class="hidden"> 
+        <div class="Content-card">
+            <h1>Square Calculator</h1>
+        
+            <form class="Formulario-Figura">
+                <h2>Calcular area y perimetro de un cuadrado</h2>
+                <p>Introduce la longitud de un lado del cuadrado</p>
+                <input type="number" placeholder="Lado" id="inputCuadrado">
+                <button class="btn-card" onclick="Cuadrado(event)">Calcular</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <!-- Triangle calculator -->
+    <section id="Figures-Triangle" class="hidden">
+        <div class="Content-card">
+           <h1>Triangle Calculator</h1>
+
+           <form class="Formulario-Figura">
+               <h2>Calcular area y perimetro de un triangulo</h2>
+               <p>Introduce los lados del triangulo</p>
+               <input type="number" placeholder="lado" id="input1">
+               <input type="number" placeholder="lado" id="input2">
+               <input type="number" placeholder="lado" id="input3">
+               <button class="btn-card" onclick="Triangulo(event)">Calcular</button>
+           </form>
         </div>
 
     </section>
+
+    
     <script src="./figuras.js"></script>
 </body>
 </html>
