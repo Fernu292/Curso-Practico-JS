@@ -34,6 +34,23 @@ body{
     }
 }
 
+.btn-principal{
+    text-decoration: none;
+    background-color: rgb(55, 19, 185);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    max-width: 25rem;
+    transition: 1s;
+    border: none;
+    cursor: pointer;
+        &:hover{
+            background-color: purple;
+            transition: 1s;
+        }
+}
+
 .Formulario-Figura{
     width: 50rem;
     margin: 5rem auto;
@@ -72,8 +89,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 0 auto;
+
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+
+    h2{
+        font-size: 2rem;
+    }
 
     div{
         display: flex;
@@ -129,26 +154,13 @@ body{
         text-align: center;
 
         font-size: 2rem;
-
-        
-
-        a{
-            text-decoration: none;
-            background-color: blue;
-            color: white;
-            font-weight: bold;
-            padding: 1rem 2rem;
-            border-radius: 1.5rem;
-            max-width: 25rem;
-            transition: 1s;
-            &:hover{
-                background-color: purple;
-                transition: 1s;
-            }
-        }
-
-        
     }
+}
+
+//Mensaje inicial
+.message{
+    text-align: center;
+    font-size: 2rem;
 }
 
 //Figuras geometricas

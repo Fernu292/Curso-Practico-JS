@@ -32,6 +32,23 @@ body {
   transition: 1s;
 }
 
+.btn-principal {
+  text-decoration: none;
+  background-color: #3713b9;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  max-width: 25rem;
+  transition: 1s;
+  border: none;
+  cursor: pointer;
+}
+.btn-principal:hover {
+  background-color: purple;
+  transition: 1s;
+}
+
 .Formulario-Figura {
   width: 50rem;
   margin: 5rem auto;
@@ -68,8 +85,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+.seleccion h2 {
+  font-size: 2rem;
 }
 .seleccion div {
   display: flex;
@@ -115,19 +138,10 @@ body {
   text-align: center;
   font-size: 2rem;
 }
-.header .header-content a {
-  text-decoration: none;
-  background-color: blue;
-  color: white;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border-radius: 1.5rem;
-  max-width: 25rem;
-  transition: 1s;
-}
-.header .header-content a:hover {
-  background-color: purple;
-  transition: 1s;
+
+.message {
+  text-align: center;
+  font-size: 2rem;
 }
 
 #Figures-Circle {

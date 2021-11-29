@@ -57,9 +57,15 @@ const Circulo = (radio) =>{
 
 
 const clickBtn = (name)=>{
-    
+
+    if(name){
+        document.getElementById('mensaje').classList.add('hidden');
+    }
+
     switch (name){
         case 'cuadrado':
+
+
             document.querySelector('#Figures-Square').classList.remove('hidden');
             document.querySelector('#Figures-Triangle').classList.add('hidden');
             document.querySelector('#Figures-Circle').classList.add('hidden');
