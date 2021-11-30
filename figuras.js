@@ -22,15 +22,55 @@ const Triangulo = (e)=>{
     let lado3 = parseFloat(document.getElementById('input3').value);
 
     let altura;
+    let area_triangulo = 0;
+
     if(lado1==lado2 && lado2==lado3){
         //Triangulo equilatero
         altura = Math.sqrt((lado1**2)-((lado2/2)**2));
         altura = altura.toPrecision(3);
+
+        area_triangulo = (lado1*altura)/2;
+    }
+    
+    if( (lado1==lado2)&& (lado1!=lado3) ){
+        //Triangulo isosceles
+        alert('Tu triangulo es isosceles');
+        altura = Math.sqrt( (lado1**2) - ( (lado3/2)**2 ));
+        area_triangulo = (lado3*altura)/2;
+    }
+    else if( (lado2==lado3) && (lado2!=lado1) ){
+        alert('Tu triangulo es isosceles');
+        altura = Math.sqrt( (lado2**2) - (lado1/2)**2 );
+        area_triangulo = (lado1*altura)/2;
+    }
+    else if( (lado1==lado3) && (lado3!=lado2) ){
+        alert('Tu triangulo es isosceles');
+        altura = Math.sqrt( (lado1**2) - (lado2/2)**2 );
+        area_triangulo = (lado2*altura)/2;
+    }
+
+    if( lado1!=lado2!=lado3){
+        //Triangulo rectangulo
+        
+        if(lado3>lado2 && lado3>lado1){
+            //Lado 3 es la hipotenusa
+            altura = lado1;
+            area_triangulo = (lado3*altura)/2;
+
+        }
+        else if(lado2>lado3 && lado2>lado1){
+            //Lado 2 es la hipotenusa
+            altura = lado3;
+            area_triangulo = (lado2*altura)/2;
+        }
+        else{
+            altura = lado2;
+            area_triangulo = (lado1*altura)/2;
+        }
+
     }
 
     const perimetro_triangulo = lado1+lado2+lado3;
-    const area_triangulo = (lado1*altura) /2;
-
     alert(`El perimetro es: ${perimetro_triangulo}m y su area es: ${area_triangulo}m2`);
 
 }
