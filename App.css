@@ -174,3 +174,19 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
+.code {
+  text-align: center;
+  max-width: 80%;
+  margin: 0rem auto 15rem auto;
+}
+.code h3 {
+  font-size: 4rem;
+}
+.code p {
+  font-size: 1.8rem;
+}
+.code div {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}

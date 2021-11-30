@@ -35,7 +35,7 @@
     <!-- End header -->
 
     <!-- Code introduction -->
-    <section>
+    <section class="code">
         <h3>The background of application</h3>
 
         <p>This project was made for get you a fast solution about 
@@ -46,15 +46,18 @@
             and get and star if this page was made util for you, Thanks!
         </p>
 
-        <button class="btn-principal" >Github code</button>
+        <div>
+            <a class="btn-principal" href="https://github.com/Fernu292/Curso-Practico-JS">Github code</a>
+        </div>
+        
     </section>
     
     <div>
-        <form action="select" class="seleccion">
+        <form action="select" class="seleccion" id="seleccion">
             <h2>Select an option</h2>
 
             <div>
-                <button onclick="clickBtn('cuadrado')" type="button">Square <i class="material-icons" id="cuadrado">crop_square</i></button>
+                <button onclick="clickBtn('cuadrado')" type="button" id="cuadrado">Square <i class="material-icons">crop_square</i></button>
 
 
                 <button onclick="clickBtn('triangulo')" id="triangulo" type="button">Triangle <i class="material-icons">change_history</i></button>

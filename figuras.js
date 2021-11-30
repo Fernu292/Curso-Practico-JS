@@ -65,7 +65,10 @@ const clickBtn = (name)=>{
     switch (name){
         case 'cuadrado':
 
+            document.getElementById('cuadrado').classList.add('btn-principal');
 
+            document.getElementById('triangulo').classList.remove('btn-principal');
+            document.getElementById('circulo').classList.remove('btn-principal');
             document.querySelector('#Figures-Square').classList.remove('hidden');
             document.querySelector('#Figures-Triangle').classList.add('hidden');
             document.querySelector('#Figures-Circle').classList.add('hidden');
@@ -74,11 +77,19 @@ const clickBtn = (name)=>{
             break;
 
         case 'triangulo':
+            document.getElementById('triangulo').classList.add('btn-principal');
+
+            document.getElementById('cuadrado').classList.remove('btn-principal');
+            document.getElementById('circulo').classList.remove('btn-principal');
             document.querySelector('#Figures-Triangle').classList.remove('hidden');
             document.querySelector('#Figures-Square').classList.add('hidden');
             document.querySelector('#Figures-Circle').classList.add('hidden');
             break;
         case 'circulo':
+            document.getElementById('circulo').classList.add('btn-principal');
+
+            document.getElementById('cuadrado').classList.remove('btn-principal');
+            document.getElementById('triangulo').classList.remove('btn-principal');
             document.querySelector('#Figures-Circle').classList.remove('hidden');
             document.querySelector('#Figures-Triangle').classList.add('hidden');
             document.querySelector('#Figures-Square').classList.add('hidden');
