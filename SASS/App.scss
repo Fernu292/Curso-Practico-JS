@@ -13,6 +13,20 @@ body{
     padding: 0;
 }
 
+input{
+    color: white;
+    background-color: rgb(73, 77, 99);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+
+    border-bottom: 1px solid white;
+
+    &:focus-visible{
+        outline: none;//Elimina el borde en formularios al seleccioanr
+    }
+}
+
 .hidden{
     display: none;
 }
