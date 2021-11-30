@@ -129,7 +129,7 @@ input{
 //Header content
 .header{
 
-    background-image: url('../img/Header.svg');
+    background-image: url('./img/Header.svg');
     background-size: cover;
     height: 70rem;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@ input{
 //Figuras geometricas
 
 #Figures-Circle{
-    background-image: url('../img/circle.svg');
+    background-image: url('./img/circle.svg');
     background-size: cover;
     height: 80rem;
     margin-bottom: 15rem;
@@ -188,7 +188,7 @@ input{
 }
 
 #Figures-Square{
-    background-image: url('../img/Cuadrado.svg');
+    background-image: url('./img/Cuadrado.svg');
     background-size: cover;
     background-position: center;
     height: 80rem;
@@ -197,7 +197,7 @@ input{
 }
 
 #Figures-Triangle{
-    background-image: url('../img/Triangulo.svg');
+    background-image: url('./img/Triangulo.svg');
     background-size: cover;
     background-position: center center;
     height: 80rem;

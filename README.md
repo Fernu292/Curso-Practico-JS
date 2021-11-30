@@ -9,3 +9,9 @@ Curso basico y practico de JavaScript de Platzi
 - Tercer paso: Transformar el codigo en multiples funciones 
 - Cuarto paso: Integrar el codigo JS con HTML
 
+## Taller 2: Porcentajes de descuentos
+
+-Primer paso: Definir las formulas 
+-Segundo paso: Implementar formulas a Js
+-Tercer paso: Crear funciones 
+-Cuarto paso: Intrgrar codigo HTML con JS
