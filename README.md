@@ -15,3 +15,10 @@ Curso basico y practico de JavaScript de Platzi
 -Segundo paso: Implementar formulas a Js
 -Tercer paso: Crear funciones 
 -Cuarto paso: Intrgrar codigo HTML con JS
+
+## Taller 3: Calculadora de datos estadisticos
+
+-Primer paso: Implementar formulas estadisticas en JS
+-Segundo paso: Implementar formulas a JS
+-Tercer paso: Crear funciones para encapsular codigo
+-Cuarto paso: Integrar el codigo a HTML

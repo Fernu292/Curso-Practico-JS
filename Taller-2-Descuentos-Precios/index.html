@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../App.css">
     <title>Descuentos en tienda virtual</title>
 </head>
 <body>
-    <h1>Decuentos y porcentajes</h1>
+    <header class="header">
+        <nav>
+            <h1 onClick='click()'>Calculador decuento</h1>
+            <h2>Taller Practico Js</h2>
+            <div>
+                <a href="../Taller-1-Figuras-Geometricas/index.html">Taller 1</a>
+                <a href="">Taller 2</a>
+                <a href="">Taller 3</a>
+                <a href="">Code</a>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1>Tienda con descuentos</h1>
+            <p>Calcular precios con descuentos</p>
+        </div>
+        
+    </header>
+
+    <section id="precios" class="descuento">
+        <h2>Calcula el precio a pagar de los productos con descuento</h2>
+
+        <form >
+            <label for="precio">Escribe el precio del producto</label>
+            <input type="number" name="precio" id="precio">
+
+            <label for="descuento">Escribe el descuento</label>
+            <input type="number" name="descuento" id="descuento" />
+
+            <label for="cupones">Cupones</label>
+            <select id="cupones">
+                <option value="">--Select--</option>
+                <option value='LFNR-030506'> LFNR-030506</option>
+                <option value='RRNM-192930'> RRNM-192930</option>
+                <option value='JGRN-102930'> JGRN-102930</option>
+                <option value='DRFN-019202'> DRFN-019202</option>
+            </select>
+
+            <p id="precio-p">Precio con descuento: <span id="precio-final"></span></p>
+
+            <button type="button" onclick="onPrice()" class="btn-card">Calcular</button>
+        </form>
+    </section>
 
     <script src="./Descuentos.js"></script>
 </body>
